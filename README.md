@@ -1,19 +1,34 @@
-# TinyML_Dog_Emotion_Classification_System
-Developed an edge AI system that classifies dog emotions from barking audio using TensorFlow Lite and MFCC-based feature extraction. Optimized the model for low-memory deployment on smart pet collars, enabling real-time emotion recognition through on-device inference.
+# TinyML Dog Emotion Classification System for Smart Pet Collars
 
-remove_silence.py - removes unnecessary silence for barking audios
+## Overview
 
+Developed a TinyML-based audio emotion recognition system that classifies dog emotions from barking audio recordings. The model uses MFCC-based feature extraction and a TensorFlow neural network, and is optimized using TensorFlow Lite for deployment on resource-constrained smart pet collar devices.
 
-trimming_2.py - For splitting into 2 second audio
+## Tech Stack
 
+* Python
+* TensorFlow / Keras
+* TensorFlow Lite
+* Librosa
+* NumPy
+* Scikit-learn
 
-split_train_test.py - split the multiple 2 second audio clips into test and train data
+## Key Techniques
 
-model.py - creates the tensorflow model
+* MFCC Feature Extraction
+* ReLU & Softmax Neural Network Classification
+* TensorFlow Lite INT8 Quantization
+* Confusion Matrix & Classification Metrics Evaluation
 
-classify.py - uses the model to classify the barking sounds into happy,sad,normal and angry
+## Performance
 
-optimize.py - reduces the size of the model from ~80kb to ~10kb (implemented due to memory constraints in hardware)
+* Accuracy: 97.84%
+* Precision: 97.93%
+* Recall: 97.84%
+* F1-Score: 97.85%
 
+## Results
 
-
+* Confusion Matrix
+* Performance Metrics Visualization
+* Model Size Optimization (76 KB → 9 KB)
